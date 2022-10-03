@@ -11,3 +11,39 @@
         justify-content: flex-end;
     }
 }
+
+
+
+
+
+
+@media all and (min-width: 664px) and (max-width: 1200px){
+    #footer-row-2{
+        justify-content: space-evenly;
+    }
+}
+
+@media all and (min-width: 1201px){
+    #footer-row-2{
+        justify-content: space-between;
+    }
+}
+
+
+
+@media all and (max-width: 663px) {
+    #footer-row-2{
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media all and (min-width: 665px) and (max-width: 689px){
+    
+}
+
+
+
+
