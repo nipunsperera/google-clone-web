@@ -1,0 +1,13 @@
+/* main content */
+
+@media all and (max-width: 475px){
+    #top-bar>div{
+        justify-content: center;
+    }
+}
+
+@media all and (min-width: 475px){
+    #top-bar>div{
+        justify-content: flex-end;
+    }
+}

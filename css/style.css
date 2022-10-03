@@ -1,0 +1,233 @@
+@import url(reset.css);
+@import url(responsive.css);
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* ----------------------Layout----------------------------------- */
+
+#top-bar{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: auto;
+    height: 48px;
+    padding: 6px;
+    /* background-color: rgb(206, 73, 73); */
+}
+
+#top-bar>div{
+    display: flex;
+    width: 1908px;
+    height: 48px;
+    /* background-color: rgb(224, 175, 175); */
+}
+
+#container{
+    width: 282px;
+    height: 48px;
+    padding-left:32px;
+    padding-right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+
+#container>div>a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+#container>div:first-child{
+    padding-left: 15px;
+    width: fit-content;
+    /* background-color: lightcyan */
+}
+
+#container>div:nth-child(2){
+    padding: 0 15px;
+    width: fit-content;
+    /* background-color: lightcyan */
+}
+
+#container>div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    /* background-color: lightseagreen; */
+}
+
+#container>div:nth-child(3)>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+    /* background-color: brown; */
+}
+
+
+
+#container>div:nth-child(4)>a{
+    display: block;
+    white-space: nowrap;
+    padding: 9px 23px;
+    margin: 0 8px;
+    background-color: #1a73e8;
+    color: white;
+    border: 1px solid transparent;
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 4px;
+    min-width: 96px;
+}
+
+#container>div:first-child:hover, #container>div:nth-child(2):hover{
+    text-decoration: underline;
+}
+
+#container>div:nth-child(3)>a>svg{
+    fill: #5f6368;
+}
+
+#container>div:nth-child(3)>a:hover{
+    background-color:rgba(60,64,67,.08) ;
+    transition: background-color 250ms;
+    border-radius: 50%;
+}
+
+#container>div:nth-child(4)>a:hover{
+    background-color:#1b66c9 ;
+    transition: background-color 250ms;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+
+
+/* -----------------------Main----------------------------- */
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sec-logo{
+    height: calc(100vh - 560px);
+    display: flex;
+    align-items: flex-end;
+    max-height: 290px;
+    min-height: 150px;
+}
+
+#ico-search{
+    padding-left: 13px;
+    width: 33px;
+    height: 44px;
+    fill: #9aa0a6;
+    
+}
+
+#ico-mic{
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#search-form{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-input{
+    max-width: 584px;
+    width: 100%;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 0 8px 0 14px;
+    display: flex;
+
+}
+
+#form-input>input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+#form-input:hover, #form-input:focus {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: transparent;
+}
+
+#sec-button{
+    padding-top: 18px;
+}
+
+#sec-button button{
+    margin: 11px 4px;
+    padding: 16px;
+    line-height: 27px;
+    font-size: 14px;
+    color: #3c4043;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    min-width: 54px;
+    cursor: pointer;
+    user-select: none;
+    height: 36px;
+    border-radius: 4px;
+}
+
+#sec-button button:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+#sec-button button:focus{
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+#sec-lang{
+    font-size: 13px;
+}
+
+#sec-lang>a{
+    text-decoration: none;
+    padding: 0 3px;
+}
+
+#sec-lang>a:hover{
+    text-decoration: underline;
+}
