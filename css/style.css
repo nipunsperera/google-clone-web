@@ -7,6 +7,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .clearfix{
@@ -79,7 +80,7 @@ body{
     /* background-color: lightseagreen; */
 }
 
-#container>div:nth-child(3)>a{
+#container>div:nth-child(3)>div{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,11 +111,11 @@ body{
     text-decoration: underline;
 }
 
-#container>div:nth-child(3)>a>svg{
+#container>div:nth-child(3)>div>svg{
     fill: #5f6368;
 }
 
-#container>div:nth-child(3)>a:hover{
+#container>div:nth-child(3)>div:hover{
     background-color:rgba(60,64,67,.08) ;
     transition: background-color 250ms;
     border-radius: 50%;
@@ -289,3 +290,309 @@ footer{
 
 }
 
+/* ---------------------aside------------------------------ */
+
+#apps{
+    visibility: visible;
+    position: absolute;
+    /* background-color: red; */
+    width: 328px;
+    height: 448px;
+    top: 75px;
+    right: 10px;
+    overflow: scroll;
+    box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%), 0px 2px 6px 2px rgb(60 64 67 / 15%);
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 8px;
+
+
+}
+
+#container-app{
+    display: flex;
+    flex-direction: column;
+}
+#set-1, #set-2{
+    width: 100%;
+    height: 100%;
+}
+
+#set-1>ul>li>a, #set-2>ul>li>a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    height: 84px;
+    
+}
+.container{
+    width: 53px;
+    height: 53px;
+    /* background-color: yellow; */
+    overflow: hidden;
+}
+
+#set-1>ul, #set-2>ul{
+    display: grid;
+    height:100%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    padding: 10px 10px 10px 14px;
+    /* background-color: #4285f4; */
+    
+}
+
+#set-1>ul>li, #set-2>ul>li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    width: fit-content;
+    height: fit-content;
+    padding: 6px;
+    
+}
+
+#set-1>ul>li span, #set-2>ul>li span{
+    color: #202124;
+    font-size: 14px;
+    letter-spacing: 0.09px;
+    line-height: 18px;
+
+
+}
+
+#set-1>ul>li img, #set-2>ul>li img{
+    transform: scale(0.95);
+}
+
+#set-1>ul>li:first-child>a img{
+    position: relative;
+    top: -2574px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(2)>a img{
+    position: relative;
+    top: -1067px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(3)>a img{
+    position: relative;
+    top: -1329px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(4)>a img{
+    position: relative;
+    top: -83px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(5)>a img{
+    position: relative;
+    top: -805px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(6)>a img{
+    position: relative;
+    top: -2769px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(7)>a img{
+    position: relative;
+    top: -1131px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(8)>a img{
+    position: relative;
+    top: -2705px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(9)>a img{
+    position: relative;
+    top: -149px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(10)>a img{
+    position: relative;
+    top: -1591px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(11)>a img{
+    position: relative;
+    top: -1984px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(12)>a img{
+    position: relative;
+    top: -673px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(13)>a img{
+    position: relative;
+    top: -2246px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(14)>a img{
+    position: relative;
+    top: -477px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(15)>a img{
+    position: relative;
+    top: -935px;
+    left: -5px;
+}
+
+#set-1>ul>li:nth-child(16)>a img{
+    position: relative;
+    top: -278px;
+    left: -5px;
+}
+
+#set-1>ul>li>a:hover, #set-2>ul>li>a:hover{
+    background-color: #e8f0fe;
+    transition: background-color 250ms ;
+    border-radius: 8px;
+}
+
+/* ---------------Seperator--------------------- */
+.seperator{
+    /* background-color: red; */
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #e8eaed
+    
+
+}
+
+/* ----------------set-2------------------------ */
+
+#set-2>ul>li:first-child>a img{
+    position: relative;
+    top: -2574px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(2)>a img{
+    position: relative;
+    top: -1067px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(3)>a img{
+    position: relative;
+    top: -1329px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(4)>a img{
+    position: relative;
+    top: -83px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(5)>a img{
+    position: relative;
+    top: -805px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(6)>a img{
+    position: relative;
+    top: -2769px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(7)>a img{
+    position: relative;
+    top: -1131px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(8)>a img{
+    position: relative;
+    top: -2705px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(9)>a img{
+    position: relative;
+    top: -149px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(10)>a img{
+    position: relative;
+    top: -1591px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(11)>a img{
+    position: relative;
+    top: -1984px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(12)>a img{
+    position: relative;
+    top: -673px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(13)>a img{
+    position: relative;
+    top: -2246px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(14)>a img{
+    position: relative;
+    top: -477px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(15)>a img{
+    position: relative;
+    top: -935px;
+    left: -5px;
+}
+
+#set-2>ul>li:nth-child(16)>a img{
+    position: relative;
+    top: -278px;
+    left: -5px;
+}
+
+
+/* ---------------Scroll-bar------------------- */
+
+aside::-webkit-scrollbar {
+    width: 16px;
+}
+aside::-webkit-scrollbar-thumb {
+    background: #dadce0;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    box-shadow: none;
+    min-height: 50px;
+}
+aside::-webkit-scrollbar-track, .EHzcec::-webkit-scrollbar-track:hover {
+    background: none;
+    border: none;
+}
