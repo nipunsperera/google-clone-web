@@ -4,12 +4,15 @@
     #top-bar>div{
         justify-content: center;
     }
+    
 }
 
 @media all and (min-width: 475px){
     #top-bar>div{
         justify-content: flex-end;
     }
+
+    
 }
 
 
@@ -21,6 +24,7 @@
     #footer-row-2{
         justify-content: space-evenly;
     }
+
 }
 
 @media all and (min-width: 1201px){
@@ -36,12 +40,18 @@
         justify-content: space-evenly;
         align-content: space-evenly;
         flex-wrap: wrap;
+        
     }
 
+    #right-list{
+        margin-top: 20px;
+    }
 }
 
 @media all and (min-width: 665px) and (max-width: 689px){
-    
+    #left-list, #right-list{
+        white-space: nowrap;
+    }
 }
 
 
