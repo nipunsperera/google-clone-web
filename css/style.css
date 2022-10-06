@@ -246,11 +246,19 @@ footer{
     
 }
 
-#designer{
-    margin-right: 200px;
+#designer a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #70757a;
+}
+
+#designer a:hover{
+    text-decoration: underline;
 }
 
 #footer-row-1{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     padding: 15px 30px;
     border-bottom: 1px solid #dadce0;

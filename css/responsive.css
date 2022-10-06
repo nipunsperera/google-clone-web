@@ -4,6 +4,10 @@
     #top-bar>div{
         justify-content: center;
     }
+
+    #left-list, #right-list{
+        white-space: nowrap;
+    }
     
 }
 
